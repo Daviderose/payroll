@@ -16,6 +16,7 @@ public class Employee {
     public Employee() {}
 
     public Employee(String firstName, String lastName, String role) {
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.role = role;
@@ -37,6 +38,22 @@ public class Employee {
         String[] parts = name.split(" ");
         this.firstName = parts[0];
         this.lastName = parts[1];
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getRole() {
